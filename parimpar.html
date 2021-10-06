@@ -4,7 +4,6 @@
         </head>
         <body>
             <script>
-               
                /*for(let inicio = 0; inicio < 10; inicio++){
                     console.log(inicio);
                 }
@@ -13,11 +12,18 @@
                 for (let inicio = 0; inicio < arreglo.length; inicio ++){
                     console.log(arreglo[inicio]); 
                 }*/
-                //IMPRIMIR CIUDADES EN ORDEN
+                //POSICIONES PARES E IMPARES
                 var ciudades = ["Bogota", "Bucaramanga", "Cali", "Monteria", "Valledupar", "Bararnquilla"];
                 for(let Ciudad = 0; Ciudad < ciudades.length; Ciudad ++){
-                    console.log(ciudades[Ciudad]);
+                    //modulo --> %
+                    //posición par
+                    if(Ciudad%2==0){
+                        console.log("Pares: ", ciudades[Ciudad]);
+                    }
+                    else if (Ciudad%2==1)
+                    console.log("Impares: ", ciudades[Ciudad]);
                 }
+
             </script>
         </body>
     </html>
